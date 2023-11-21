@@ -34,7 +34,7 @@ article{
     flex-grow: 1;
     flex-shrink: 0;
     padding: 10px;
-    background-color: #bbc3ff83;
+    background-color: #bbc3ff21;
     border-radius: 40px;
     flex-basis: 30%;
     flex-direction: column;
@@ -97,8 +97,28 @@ article{
 .formation{
     
 }
+.button{
+display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #3498db;
+  color: #fff;
+  width: fit-content;
+    
+}
+.button:hover {
+    background-color: #0161a1;
+  }
 .centresi{
     margin-bottom: 10px;
+    
 }
 .spotify{
     border-radius: 30px;
