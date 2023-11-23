@@ -1,11 +1,38 @@
+.background-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/bg.jpg') center/cover no-repeat; 
+    background-attachment: fixed;
+}
+.nextbg {
+    background: url('images/nextcloud.png') center/cover no-repeat; 
+}
+p{
+    color: #ffffff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body{
     transition: all 0.2s;
     transition: font-size 0.2s;
     padding-left: 1%;
     padding-right: 1%;
-    background-color:rgb(240, 252, 255);
     font-size: larger;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #fff
+    
 }
 header{
     transition: all 0.3s;
@@ -26,6 +53,8 @@ main{
     justify-content: space-around;
     flex-grow: 1;
     animation: open 1s forwards;
+    background: url('images/bg.jpg') center/cover no-repeat; 
+    background-attachment: fixed;
 }
 
 article{
@@ -43,6 +72,8 @@ article{
     margin: auto;
     margin-right: 5px;
     margin-left: 5px;
+    -webkit-backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
 }
 
 .formation .text {
@@ -55,6 +86,8 @@ article{
     margin-bottom: 10px;
     margin-top: 15px;
     border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
 }
 .formation .texts{
     ftransition: all 0.5s;
@@ -64,6 +97,8 @@ article{
     margin: 0 auto;
     margin-bottom: 5px;
     border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
 }
 
 .formation .perso{
@@ -73,7 +108,7 @@ article{
     margin: 0 auto;
     margin-bottom: 5px;
     border-radius: 10px;
-    background-color: #d5ffdc83;
+    background-color: rgba(213, 255, 249, 0.514);
 }
 .text{
     transition: all 0.5s;
@@ -81,7 +116,7 @@ article{
     padding-right: 10px;
     font-size: large;
     text-align: center;
-    background-color: #f2f4ff83;
+    background-color: #f2f4ff25;
     width: fit-content;
     margin: auto;
     margin-bottom: 10px;
@@ -108,13 +143,13 @@ display: inline-block;
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
-  background-color: #3498db;
+  background-color: #3498db83;
   color: #fff;
   width: fit-content;
     
 }
 .button:hover {
-    background-color: #0161a1;
+    background-color: #0161a16b;
   }
 .centresi{
     margin-bottom: 10px;
@@ -139,7 +174,7 @@ display: inline-block;
     display: flex;
     flex-grow: 1;
     flex-basis: 80%;
-    background-color: #bbc3ff83;
+    background-color: #bbc3ff10;
 }
 
 .whoami .text{
@@ -178,7 +213,7 @@ display: inline-block;
     flex-direction: column;
     flex-basis: 50%;
     flex-shrink: 1;
-    background-color: #f6f7ff;
+    background-color: #f6f7ff10;
     border-radius: 30px;
     padding-left: 15px;
     padding-right: 15px;
